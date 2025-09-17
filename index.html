@@ -51,13 +51,15 @@
     }
     .menu {
       display: flex;
-      justify-content: space-around;
+      flex-direction: column; /* Mudando para colunas */
+      align-items: center;   /* Para centralizar os itens */
       margin-top: 20px;
     }
     .menu div {
       background-color: #ffcc99;
       padding: 10px;
       border-radius: 5px;
+      margin: 5px 0; /* Espaço entre os itens */
     }
     footer {
       margin-top: 40px;
@@ -116,7 +118,7 @@
     </tr>
   </table>
 
-  <!-- Menu usando Flexbox -->
+  <!-- Menu usando Flexbox (agora com direção em coluna) -->
   <div class="menu">
     <div><a href="#">Início</a></div>
     <div><a href="#">Receitas</a></div>
@@ -132,11 +134,6 @@
       <li><a href="https://receitadaboa.com.br/receitas/strogonoff-de-frango-sem-creme-de-leite" target="_blank">Receita da Boa</a></li>
     </ul>
   </footer>
-flex-container {
-  display: flex;
-  flex-direction: column;
-}
+
 </body>
 </html>
-
-
