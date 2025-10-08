@@ -66,11 +66,12 @@
     }
 
     /* Ajustes de mídia para telas menores */
-    @media (max-width: 480px) {
-      a {
-        color: red;
+    @media screen and (min-whidth:480px){
+      a {color: pink;}
       }
-      /* Ajuste adicional se necessário */
+     @media screen and(max-widh:840px){
+       a{color: orenge;}
+     }
       p {
         color: blue; /* Por exemplo, alterando a cor do texto de parágrafos */
       }
